@@ -21,6 +21,8 @@ TEMPLATE-formula
 A SaltStack formula that is empty. It has dummy content to help with a quick
 start on a new formula and it serves as a style guide.
 
+Testing a new release.
+
 .. contents:: **Table of Contents**
    :depth: 1
 
