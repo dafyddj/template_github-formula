@@ -12,7 +12,6 @@ sed -i -e "s_^\(version:\).*_\1 ${1}_" FORMULA
 ###############################################################################
 
 export MAINTAINER_TOKEN=${GH_TOKEN}
-go get github.com/myii/maintainer
 maintainer contributor
 
 ###############################################################################
