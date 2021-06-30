@@ -11,16 +11,15 @@ sed -i -e "s_^\(version:\).*_\1 ${1}_" FORMULA
 # (B) Use `maintainer` to update AUTHORS.md
 ###############################################################################
 
-export MAINTAINER_TOKEN=${GH_TOKEN}
-go get github.com/myii/maintainer
-maintainer contributor
+#export MAINTAINER_TOKEN=${GH_TOKEN}
+#"${HOME}"/go/bin/maintainer contributor
 
 ###############################################################################
 # (B) Use `m2r` to convert automatically produced `.md` docs to `.rst`
 ###############################################################################
 
 # Install `m2r`
-sudo -H pip install m2r
+pip3 install m2r
 
 # Copy and then convert the `.md` docs
 cp ./*.md docs/
